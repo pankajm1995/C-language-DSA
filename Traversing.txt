@@ -1,0 +1,104 @@
+                                            Traversing of Binary Tree
+Preorder 
+
+    Process the root R
+Traverse Left sub tree of R in preorder 
+Traverse RIght sub tree of R in preorder
+
+
+                                         Root
+                                        -------
+                                        | 100 |
+                                        -------
+                                           |
+                            ------------------------------ 
+                            |    ------------------------ |                         
+                            |    | 200|   | 11 |   |300 | |
+                            |    ------------------------ | 
+                            -------------------------------
+
+                -------                                  -------
+                | 200 |                                  | 300 |
+                -------                                  -------
+                   |                                        |
+    ------------------------------          -------------------------------                  
+    |    ------------------------ |         |    ------------------------ |                  
+    |    | 400|   | 22 |   |500 | |         |    | 600|   | 33 |   |700 | |
+    |    ------------------------ |         |    ------------------------ | 
+    -------------------------------         -------------------------------        
+          |                   |                   |                   |
+          |                   |                   |                   |
+       -------              -------             -------             -------
+       | 400 |              | 500 |             | 600 |             | 700 |
+       -------              -------             -------             ------- 
+          |                     |                   |                  |
+ -----------------      --------------     ------------------   -----------------      
+ | ------------- |      |-------------|    |----------------|   |----------------|
+ | |  | |44| | | |      | | | |55|| | |    | |  |  |66| | | |   | |  | |77| | |  |
+ -----------------      ---------------    ------------------   ------------------
+
+
+ struct BTnode
+ {
+      struct BT node *left;
+      int data;
+      struct BT node * right;
+ }
+
+Preorder 
+Process the root R
+Traverse Left sub tree of R in preorder 
+Traverse RIght sub tree of R in preorder
+==========
+ psedo code 
+
+
+ void preoder(struct BT node *r)
+ {
+    if(root)
+    {
+        
+        printf("%d",r->data);
+        preoder(r->left);
+        preoder(r->right);
+    }
+ }
+
+
+ ===============================================================
+ IN order 
+ ============
+ traverse the left subtree of R in inorder
+ process the root r
+ traverse the right subtree of R in inorder
+
+ psedo code 
+  void inorder(struct BT node *r)
+ {
+    if(r)
+    {
+        inorder(r->left);
+        printf("%d",r->data);
+        inorder(r->right);
+    }
+ }
+
+ =======================================
+ Postorder 
+
+ traverse the left subtree of R in Postorder
+ traverse the right subtree of R in Postorder
+ process the root r
+
+
+  psedo code 
+  void Postorder(struct BT node *r)
+ {
+    if(r)
+    {
+        Postorder(r->left);
+        printf("%d",r->data);
+        Postorder(r->right);
+    }
+ }
+
