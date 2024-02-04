@@ -1,0 +1,106 @@
+Non Linear
+Tree
+fininte set of one or more
+ Data ites(node) such that 
+  special node called the  Root of tree
+
+  each of which itself tree
+
+ 
+
+Degree==> no. of sub tree of a node is called Degree.
+
+Leaf==>  A node with degree 0
+
+Terminal Nodes:: Leaf node also known as terminal Nodes
+
+Degree of tree ::  maximum degree of nodes in tree
+
+Ancesstors==>all the nods  Along the path from the root to that node 
+
+Descendants==> all the nodes along the path from node to terminal node 
+
+Level Number==> 
+
+Genration ==> Nodes with same level is called generation
+
+Height==> max no. of node a branch
+
+Edge==> A line drawn from a node A to B  is called Edge
+
+Path==> sequance of consistancy  edeges
+
+Branch ==> Path ending a Leaf is called branch
+
+
+=====================================================================================================================================
+                                                       BINARY TREE 
+T is define as fininte set of elements , called node such that
+
+-- T is empty (called null tree)
+-- T has only two disjoint nodes 
+                                         T
+                                         |
+                                         |
+                                    -------------     
+                                    |           |
+                                    R1          R2
+===========================================================================================================================
+                                                          Complete Binary Tree
+
+                                                          A 
+                                                          |
+                                                          |
+                                                 ------------------
+                                                 ||               ||
+                                                 B                 C
+                                          -------------       -------------       
+                                          ||          ||      ||          ||
+                                          D           E        F           G
+
+
+=================================================================================================================================
+                                                         Almost Complete Binary Tree
+
+                                                             A 
+                                                          |
+                                                          |
+                                                 ------------------
+                                                 ||               ||
+                                                 B                 C
+                                          -------------       -------------       
+                                          ||          ||      ||          
+                                          D           E        F          
+
+ ==========================================================================================================================                                         
+                                                          Strict Binary Tree
+
+
+                                                          A 
+                                                          |
+                                                          |
+                                                 ------------------
+                                                 ||               ||
+                                                 B                 C
+                                          -------------       -------------       
+                                          ||          ||      ||          || 
+                                          D            E       F           G 
+                                                    -------              -------
+                                                    ||    ||            ||     ||
+                                                    H      I            J       K  
+
+   ===========================================================================================================================                                                 
+                                               Extended Binary Tree
+A tree has no complete from left or right then we add nodes left or righht is called extended Binary tree
+
+
+
+Prensention of Binary tree
+1.Array Representation
+2.Linked list Representation
+
+
+condition of any Representation
+one should have direct access to root 
+Any node N of T one should to the children
+
